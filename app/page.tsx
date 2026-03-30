@@ -72,6 +72,7 @@ export default function TTSApp() {
       setIsSettingsOpen(true)
       return
     }
+    generate(styledText, voice, format)
   }
 
   function onDownload() {
