@@ -68,7 +68,10 @@ export default function TTSApp() {
   }
 
   function onGenerate() {
-    generate(styledText, voice, format)
+    if (!apiKey) {
+      setIsSettingsOpen(true)
+      return
+    }
   }
 
   function onDownload() {
